@@ -1,0 +1,92 @@
+site_name: Ascentiz Open Unit
+site_description: Developer documentation for the Ascentiz Open Unit robotics platform.
+site_author: Ascentiz
+repo_url: https://github.com/ascentiz/open-unit-docs
+repo_name: ascentiz/open-unit-docs
+edit_uri: edit/main/docs/
+docs_dir: docs
+site_dir: site
+use_directory_urls: true
+strict: true
+
+theme:
+  name: material
+  language: en
+  palette:
+    - scheme: default
+      primary: blue grey
+      accent: cyan
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - content.action.edit
+    - search.suggest
+    - search.highlight
+    - toc.follow
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ascentiz/open-unit-docs
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Overview: getting-started/index.md
+      - Development Kit: getting-started/development-kit.md
+      - First Session: getting-started/first-session.md
+  - Architecture:
+      - Overview: architecture/index.md
+      - Platform Boundary: architecture/platform-boundary.md
+      - Safety Model: architecture/safety-model.md
+  - API:
+      - Overview: api/index.md
+      - Control API: api/control-api.md
+      - Telemetry API: api/telemetry-api.md
+  - Tutorials:
+      - Overview: tutorials/index.md
+      - Bring-Up Workflow: tutorials/bring-up-workflow.md
+      - Safety-Gated Commanding: tutorials/safety-gated-commanding.md
+  - Examples:
+      - Overview: examples/index.md
+      - Streaming Telemetry: examples/streaming-telemetry.md
+      - Assistive Gait Loop: examples/assistive-gait-loop.md
+  - Research:
+      - Overview: research/index.md
+      - University Labs: research/university-labs.md
+  - Community:
+      - Overview: community/index.md
+      - Contributing: community/contributing.md
+      - Feedback: community/feedback.md
+
+copyright: Copyright &copy; 2026 Ascentiz
+
