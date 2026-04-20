@@ -12,6 +12,8 @@ strict: true
 theme:
   name: material
   language: en
+  logo: assets/images/ascentiz-logo.png
+  favicon: assets/images/ascentiz-logo.png
   palette:
     - scheme: default
       primary: blue grey
@@ -89,4 +91,3 @@ nav:
       - Feedback: community/feedback.md
 
 copyright: Copyright &copy; 2026 Ascentiz
-
