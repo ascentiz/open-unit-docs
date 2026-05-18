@@ -2,6 +2,30 @@
 
 This tutorial walks through a sensible first-day bring-up sequence for an Open Unit target connected to an Exoskeleton Unit.
 
+<div class="video-callout">
+  <h2>Bring-Up Walkthrough Video</h2>
+  <p>Test embed using the current supervised bring-up recording while final tutorial footage is still being prepared.</p>
+  <div class="video-callout__meta">
+    <span>Hardware Tbd</span>
+    <span>Firmware Tbd</span>
+    <span>Open Unit Tbd</span>
+  </div>
+  <div class="video-embed">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/L-O7v6jCUVM"
+      title="Bring-Up Walkthrough"
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+  <div class="video-transcript">
+    <p><strong>What to verify:</strong> boot health, device link readiness, telemetry freshness, and a clearly unarmed session state before any control test.</p>
+    <p><strong>Fallback:</strong> if no video is available yet, use the written procedure below as the authoritative workflow.</p>
+  </div>
+</div>
+
 ## Goal
 
 Confirm that the platform is healthy enough for non-risky developer work before running any application logic that could request actuation.
@@ -57,7 +81,12 @@ Capture the following before any control tests:
 
 If state is unclear, fault reporting is missing, or telemetry does not match expectations, pause and resolve the platform issue before moving on.
 
+## Operator Notes
+
+- run the sequence with physical supervision
+- record software, firmware, and hardware versions before moving to command tests
+- stop immediately if any state transition is unclear or telemetry appears stale
+
 ## Success Criteria
 
 You should now have enough confidence to begin low-risk application testing or move to the [Safety-Gated Commanding](safety-gated-commanding.md) tutorial.
-

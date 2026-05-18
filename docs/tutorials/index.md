@@ -15,6 +15,7 @@ Each tutorial should help a developer complete a real task:
 
 - [Bring-Up Workflow](bring-up-workflow.md)
 - [Safety-Gated Commanding](safety-gated-commanding.md)
+- [Embedding YouTube Videos](embedding-youtube-videos.md)
 
 ## Writing Style
 
@@ -24,4 +25,3 @@ Future tutorials should stay opinionated and practical:
 - define success criteria
 - show expected outputs
 - explain safety assumptions explicitly
-

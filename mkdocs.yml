@@ -78,6 +78,7 @@ nav:
       - Overview: tutorials/index.md
       - Bring-Up Workflow: tutorials/bring-up-workflow.md
       - Safety-Gated Commanding: tutorials/safety-gated-commanding.md
+      - Embedding YouTube Videos: tutorials/embedding-youtube-videos.md
   - Examples:
       - Overview: examples/index.md
       - Streaming Telemetry: examples/streaming-telemetry.md
