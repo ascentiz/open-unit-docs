@@ -1,6 +1,6 @@
-# Ascentiz Open Unit
+# BodyOS 
 
-**Ascentiz Open Unit** is the developer-facing compute and control layer for the Ascentiz modular exoskeleton platform.
+**BodyOS** is the developer-facing compute-and-control layer for the Ascentiz modular exoskeleton platform.
 
 It is designed for teams that need a credible path from hardware integration to applied robotics research:
 
