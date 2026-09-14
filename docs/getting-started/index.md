@@ -26,6 +26,7 @@ Have the following available:
 
 - [Development Kit](development-kit.md) for hardware and software prerequisites
 - [First Session](first-session.md) for a minimal inspection and command workflow
+- [Connect B-core pi 1 with Laptop](Connect B-core pi 1.md) for connecting hardawre
 
 ## Early Platform Notes
 
