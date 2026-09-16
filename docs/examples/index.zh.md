@@ -4,6 +4,6 @@
 
 ## 当前示例
 
-- [读取外骨骼本体](read-exoskeleton.md)：连接展会 AZ 算力盒，通过已安装的 az_sdk demo 读取 AZ-H 状态及传感器数据，或使用 Windows 数据监控软件查看数据。
+- [读取外骨骼本体](read-exoskeleton.md)：连接B-core Pi 1，通过已安装的 az_sdk demo 读取 AZ-H 状态及传感器数据，或使用 Windows 数据监控软件查看数据。
 
-本示例根据上传的展会操作说明整理，尚未提供或验证实际 demo 源码及 wheel，不包含动作控制示例，也不公开连接凭据。
+
