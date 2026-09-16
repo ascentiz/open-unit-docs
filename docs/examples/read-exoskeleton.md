@@ -1,20 +1,20 @@
 # Read Exoskeleton Data
 
-Read AZ-H device status and sensor data through the AZ compute box. This example describes the exhibition setup documented in **AZ算力盒展会版本操作说明1.docx**. It covers the preinstalled Python SDK and the Windows monitoring application; it is not a general installation guide for all BodyOS releases.
+Read Ascentiz-H device status and sensor data through the B-core Pi 1 compute box. 
 
 !!! warning "Startup can cause motion"
-    Reading data does not request motion, but AZ-H startup performs wear detection and can move its motors. Follow the approved wearing and startup procedure with a trained operator. This example does not include the exhibition document's unworn motor-restraint workaround. Do not bypass wear detection or device-side safeguards.
+    Reading data does not request motion, but Ascentiz-H startup performs wear detection and can move its motors. Follow the approved wearing and startup procedure with a trained operator. This example does not include the exhibition document's unworn motor-restraint workaround. Do not bypass wear detection or device-side safeguards.
 
 ## Equipment and software
 
-- One AZ compute box connected to an AZ-H exoskeleton.
+- One AZ compute box connected to an Ascentiz-H exoskeleton.
 - One Windows laptop for network access and the monitoring application.
 - Wireless access to the compute box, or the supplied HRS IX network cable for a wired connection.
 - The SDK and demo already installed on the exhibition compute box.
 
-The compute box connects to the AZ-H USB Type-C port **without a lightning symbol**. In this exhibition version, only the compute box's power button is functional; the plus, minus, and mode buttons are not effective. Use the approved hardware procedure for connection, wearing, and power-on.
+The compute box connects to the Ascentiz-H USB Type-C port **without a lightning symbol**. 
 
-The document identifies a green AZ-H backpack indicator as successful wear detection. If detection fails, AZ-H does not output data. Stop and consult the device operator rather than forcing a data connection.
+The document identifies a green Ascentiz-H backpack indicator as successful wear detection. If detection fails, Ascentiz-H does not output data. Stop and consult the device operator rather than forcing a data connection.
 
 ## Connect the laptop to the compute box
 
@@ -83,7 +83,7 @@ The uploaded Word file does not contain the demo source, function signatures, pa
 This is an alternative way to view data; the Word file does not specify whether it can run concurrently with the SDK demo.
 
 1. Complete the network connection above.
-2. Open the desktop `dist-exe` folder and launch `机械臂数据监控.exe`. This is the application's filename in the exhibition guide, even though this example reads AZ-H data.
+2. Open the desktop `dist-exe` folder and launch `机械臂数据监控.exe`. This is the application's filename in the exhibition guide, even though this example reads Ascentiz-H data.
 3. In the Microsoft Edge interface, open **连接配置** (Connection Configuration).
 4. Select `10.42.0.1` for wireless or `192.168.10.1` for wired access and connect.
 5. Return to **数据监控** (Data Monitoring) to view the data.
@@ -94,7 +94,7 @@ No server port, command-line options, or additional fields are specified in the 
 
 A network connection alone does not prove that live device data is arriving. Check the returned status and that the data index continues to advance. Sensor values may remain steady while the device is stationary; a persistently unchanged index requires investigation.
 
-- No data: check successful wear detection, the approved compute-box/AZ-H connection, and the selected network address.
+- No data: check successful wear detection, the approved compute-box/Ascentiz-H connection, and the selected network address.
 - Wrong address after switching networks: apply the appropriate laptop script and update the application's connection configuration.
 - Import failure: check that execution is on the compute box in the SDK's Python environment.
 - Values and index remain frozen: the exhibition guide identifies this as a possible compute-box/G4 communication failure. It states that manually restarting programs over SSH is not an effective remedy for that condition. Ask the device operator to follow the approved stop and power-cycle procedure.
