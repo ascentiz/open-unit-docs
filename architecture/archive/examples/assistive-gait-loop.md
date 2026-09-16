@@ -35,4 +35,3 @@ while app.running:
 ## Why This Example Matters
 
 It illustrates the core architectural promise of the platform: developers can build meaningful control applications without collapsing the separation between experimentation and safety enforcement.
-

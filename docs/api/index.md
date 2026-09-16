@@ -1,5 +1,7 @@
 # API Overview
 
+This section will become the interface reference for the BodyOS SDK. Existing contracts below are preview concepts, not a verified reference for the distributed wheel. Actual signatures, package names, and supported transports must be confirmed against the release.
+
 The Open Unit API surface is expected to grow over time, but it should remain organized around a few stable concepts:
 
 - **session management** for requesting and tracking command authority
@@ -34,4 +36,3 @@ The eventual API should provide:
 
 - [Control API](control-api.md) for command session and actuation requests
 - [Telemetry API](telemetry-api.md) for streaming state and metrics
-

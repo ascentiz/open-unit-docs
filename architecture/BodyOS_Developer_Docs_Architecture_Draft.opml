@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>BodyOS Developer Documentation / 开发者文档（精简架构草案）</title>
+  </head>
+  <body>
+    <outline text="BodyOS Developer Documentation / 开发者文档（精简架构草案）">
+      <outline text="01 Getting Started / 快速入门">
+        <outline text="Platform Overview / 平台介绍"/>
+        <outline text="Setup and First Run / 环境准备与首次运行"/>
+      </outline>
+      <outline text="02 Mechanical / 机械结构">
+        <outline text="Structure Overview / 结构概览"/>
+        <outline text="Assembly and Fit / 装配与佩戴"/>
+      </outline>
+      <outline text="03 Hardware: B-core Pi 1 / 硬件">
+        <outline text="Board and Interfaces / 板卡与接口"/>
+        <outline text="Power and Connection / 供电与连接"/>
+      </outline>
+      <outline text="04 BodyOS / 平台系统">
+        <outline text="Architecture and Safety / 架构与安全边界"/>
+        <outline text="Installation and Configuration / 安装与配置"/>
+        <outline text="Services and Deployment / 服务与应用部署"/>
+      </outline>
+      <outline text="05 SDK / 开发工具包">
+        <outline text="Installation / 安装"/>
+        <outline text="Basic Usage / 基本使用"/>
+      </outline>
+      <outline text="06 API / 接口参考">
+        <outline text="Control and Sessions / 控制与会话"/>
+        <outline text="Telemetry / 遥测"/>
+      </outline>
+      <outline text="07 Examples / 示例">
+        <outline text="Telemetry Collection / 遥测采集"/>
+        <outline text="Control Example / 控制示例"/>
+      </outline>
+      <outline text="08 Integrations / 外部集成">
+        <outline text="ROS 2 / ROS 2 集成"/>
+        <outline text="External Devices and Tools / 外部设备与工具"/>
+      </outline>
+      <outline text="09 Troubleshooting / 故障排查">
+        <outline text="Common Issues / 常见问题"/>
+        <outline text="Logs and Feedback / 日志与反馈"/>
+      </outline>
+    </outline>
+  </body>
+</opml>

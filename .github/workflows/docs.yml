@@ -38,6 +38,9 @@ jobs:
       - name: Build documentation
         run: mkdocs build --strict
 
+      - name: Check bilingual documentation
+        run: python scripts/check_i18n.py
+
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:

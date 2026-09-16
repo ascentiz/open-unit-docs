@@ -32,4 +32,3 @@ for sample in client.stream(topic="joint_state", rate_hz=50):
 - this example is read-only and should be safe for early integration work
 - downstream logging should preserve timestamps and device identifiers
 - the final implementation may support additional transports or schemas
-

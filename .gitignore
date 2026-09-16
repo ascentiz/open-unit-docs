@@ -2,4 +2,5 @@ site/
 .venv/
 __pycache__/
 .DS_Store
-
+.playwright-cli/
+output/playwright/

@@ -1,5 +1,6 @@
-site_name: Ascentiz Open Unit
-site_description: Developer documentation for the Ascentiz Open Unit robotics platform.
+site_name: BodyOS Developer Documentation
+site_url: https://ascentiz.github.io/open-unit-docs/
+site_description: Developer documentation for Exo Belt, B-core Pi 1 hardware, and the BodyOS Python SDK.
 site_author: Ascentiz
 repo_url: https://github.com/ascentiz/open-unit-docs
 repo_name: ascentiz/open-unit-docs
@@ -8,9 +9,21 @@ docs_dir: docs
 site_dir: site
 use_directory_urls: true
 strict: true
+not_in_nav: |
+  /getting-started/index.md
+  /getting-started/index.zh.md
+  /architecture/**
+  /tutorials/**
+  /research/**
+  /community/**
+  /getting-started/development-kit.md
+  /getting-started/development-kit.zh.md
+  /getting-started/first-session.md
+  /getting-started/first-session.zh.md
 
 theme:
   name: material
+  custom_dir: overrides
   language: en
   logo: assets/images/ascentiz-logo.png
   favicon: assets/images/ascentiz-logo.png
@@ -32,6 +45,59 @@ theme:
 
 plugins:
   - search
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: zh
+          name: 简体中文
+          build: true
+          site_description: Exo Belt 外骨骼腰带、B-core Pi 1 硬件与 BodyOS Python SDK 开发者文档。
+          nav_translations:
+            Home: 首页
+            Getting Started: 快速入门
+            Platform Overview: 平台介绍
+            Setup and First Run: 环境准备与首次运行
+            Exo Belt Mechanical: 外骨骼腰带机械结构
+            Structure Overview: 结构概览
+            Assembly and Fit: 装配与佩戴
+            "Hardware: B-core Pi 1": "硬件：B-core Pi 1"
+            Hardware Architecture: 硬件架构
+            Power and Connection: 供电与连接
+            Board and Interfaces: 板卡与接口
+            BodyOS SDK: BodyOS SDK
+            Installation and Configuration: 安装与配置
+            Basic Usage: 基本使用
+            Architecture and Safety Boundary: 架构与安全边界
+            Integrations: 外部集成
+            ROS 2: ROS 2 集成
+            External Devices and Tools: 外部设备与工具
+            Troubleshooting: 故障排查
+            Common Issues: 常见问题
+            Logs and Feedback: 日志与反馈
+            Overview: 概览
+            Development Kit: 开发套件
+            First Session: 首次会话
+            Architecture: 系统架构
+            Platform Boundary: 平台边界
+            Safety Model: 安全模型
+            API: API 接口
+            Control API: 控制 API
+            Telemetry API: 遥测 API
+            Tutorials: 教程
+            Bring-Up Workflow: 启动检查流程
+            Safety-Gated Commanding: 安全门控命令
+            Embedding YouTube Videos: 嵌入 YouTube 视频
+            Examples: 示例
+            Read Exoskeleton Data: 读取外骨骼本体
+            Research: 科研合作
+            University Labs: 高校实验室
+            Community: 社区
+            Contributing: 贡献指南
+            Feedback: 问题反馈
 
 markdown_extensions:
   - admonition
@@ -61,34 +127,38 @@ extra:
       link: https://github.com/ascentiz/open-unit-docs
 
 nav:
-  - Home: index.md
   - Getting Started:
-      - Overview: getting-started/index.md
-      - Development Kit: getting-started/development-kit.md
-      - First Session: getting-started/first-session.md
-  - Architecture:
-      - Overview: architecture/index.md
-      - Platform Boundary: architecture/platform-boundary.md
-      - Safety Model: architecture/safety-model.md
+      - Overview: index.md
+      - Platform Overview: getting-started/platform-overview.md
+      - Setup and First Run: getting-started/setup-and-first-run.md
+  - Exo Belt Mechanical:
+      - Overview: mechanical/index.md
+      - Structure Overview: mechanical/structure-overview.md
+      - Assembly and Fit: mechanical/assembly-and-fit.md
+  - "Hardware: B-core Pi 1":
+      - Overview: hardware/index.md
+      - Hardware Architecture: hardware/hardware-architecture.md
+      - Power and Connection: hardware/power-and-connection.md
+      - Board and Interfaces: hardware/board-and-interfaces.md
+  - BodyOS SDK:
+      - Overview: sdk/index.md
+      - Installation and Configuration: sdk/installation-and-configuration.md
+      - Basic Usage: sdk/basic-usage.md
+      - Architecture and Safety Boundary: sdk/architecture-and-safety-boundary.md
   - API:
       - Overview: api/index.md
       - Control API: api/control-api.md
       - Telemetry API: api/telemetry-api.md
-  - Tutorials:
-      - Overview: tutorials/index.md
-      - Bring-Up Workflow: tutorials/bring-up-workflow.md
-      - Safety-Gated Commanding: tutorials/safety-gated-commanding.md
-      - Embedding YouTube Videos: tutorials/embedding-youtube-videos.md
   - Examples:
       - Overview: examples/index.md
-      - Streaming Telemetry: examples/streaming-telemetry.md
-      - Assistive Gait Loop: examples/assistive-gait-loop.md
-  - Research:
-      - Overview: research/index.md
-      - University Labs: research/university-labs.md
-  - Community:
-      - Overview: community/index.md
-      - Contributing: community/contributing.md
-      - Feedback: community/feedback.md
+      - Read Exoskeleton Data: examples/read-exoskeleton.md
+  - Integrations:
+      - Overview: integrations/index.md
+      - ROS 2: integrations/ros-2.md
+      - External Devices and Tools: integrations/external-devices-and-tools.md
+  - Troubleshooting:
+      - Overview: troubleshooting/index.md
+      - Common Issues: troubleshooting/common-issues.md
+      - Logs and Feedback: troubleshooting/logs-and-feedback.md
 
 copyright: Copyright &copy; 2026 Ascentiz

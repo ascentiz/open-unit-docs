@@ -1,6 +1,6 @@
 # BodyOS 
 
-**BodyOS** is the developer-facing compute-and-control layer for the Ascentiz modular exoskeleton platform.
+**BodyOS** is a Python SDK for developers working with the Ascentiz exoskeleton platform. It is distributed as a `.whl` package, not as a complete operating system.
 
 It is designed for teams that need a credible path from hardware integration to applied robotics research:
 
@@ -32,13 +32,16 @@ This separation lets developers build on the platform without bypassing the devi
 
 ## Documentation Map
 
-- **Getting Started** explains the development kit mindset, prerequisites, and a first device session.
-- **Architecture** describes how the Exoskeleton Unit and Open Unit interact and where authority is enforced.
-- **API** outlines the current control and telemetry surface and how it is expected to evolve.
-- **Tutorials** walks through end-to-end setup and safe command workflows.
-- **Examples** shows realistic reference applications and integration patterns.
-- **Research** documents how university labs can collaborate with Ascentiz.
-- **Community** explains contribution, feedback, and support expectations.
+- [Getting Started](getting-started/index.md): platform overview, setup, and a first run.
+- [Exo Belt Mechanical](mechanical/index.md): structure, assembly, and fit.
+- [Hardware: B-core Pi 1](hardware/index.md): hardware architecture, power, connections, and interfaces.
+- [BodyOS SDK](sdk/index.md): wheel installation, basic usage, and the architecture and safety boundary.
+- [API](api/index.md): detailed interface contracts.
+- [Examples](examples/index.md): reading AZ-H exoskeleton status and sensor data in the exhibition setup.
+- [Integrations](integrations/index.md): external devices and tools, including a planned ROS 2 guide.
+- [Troubleshooting](troubleshooting/index.md): common issues, logs, and feedback.
+
+Hardware specifications, SDK compatibility, and integration support must be confirmed against released materials. Pages marked **To be completed** are authoring scaffolds, not validated procedures.
 
 ## Design Principles
 
@@ -49,5 +52,8 @@ This separation lets developers build on the platform without bypassing the devi
 
 ## Next Steps
 
-If you are new to the platform, start with [Getting Started](getting-started/index.md). If you need the system boundary first, go directly to [Architecture](architecture/index.md).
+If you are new to the platform, start with [Getting Started](getting-started/index.md). To understand the SDK's responsibilities, read [Architecture and Safety Boundary](sdk/architecture-and-safety-boundary.md).
 
+## Additional Resources
+
+Existing [tutorials](tutorials/index.md), [research collaboration guidance](research/index.md), and [contribution guidelines](community/contributing.md) remain available as supporting resources. They are no longer top-level navigation sections.
