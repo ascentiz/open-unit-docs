@@ -1,4 +1,4 @@
-# BodyOS 
+# BodyOS hardware
 
 **BodyOS** is a Python/C++ SDK for developers working with the Ascentiz exoskeleton platform. It is distributed as a `.whl` package, not as a complete operating system.
 
