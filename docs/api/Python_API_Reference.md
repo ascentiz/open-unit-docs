@@ -69,7 +69,8 @@ if sensors and sensors.link_state == 1:
 ---
 
 ## 5. 驱动器配置读写
-
+| 接口签名 | 详细说明 |
+| :--- | :--- |
 | `clear_error(node_mask: int = 0x0F)` | 清除驱动器故障状态。 |
 | `save_config()` | 将当前配置保存到驱动器 Flash。 |
 | `int read_config(idx: DriverConfigIndex)` | 读取驱动器配置的 32 位原始值（如读取 `CONTROL_MODE`）。 |
