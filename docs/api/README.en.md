@@ -1,4 +1,4 @@
-# BodyOS SDK v2.0.0 Developer Guide
+# BodyOS SDK Developer Guide
 
 Welcome to BodyOS SDK, the developer toolkit provided by BodyOS. It enables applications on B-core Pi 1 to obtain exoskeleton data, send control requests, and integrate third-party sensors and external devices.
 
