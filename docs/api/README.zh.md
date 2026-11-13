@@ -1,4 +1,4 @@
-# BodyOS SDK v2.0.0 开发者手册
+# BodyOS SDK 开发者手册
 
 欢迎使用 BodyOS SDK。它是 BodyOS 面向开发者提供的开发工具包，支持通过 B-core Pi 1 获取外骨骼数据、下发控制请求，并集成第三方传感器与外部设备。
 
