@@ -22,6 +22,7 @@ NAV_SOURCES = (
     "product/overview.md",
     "product/exo-belt.md",
     "product/b-core-pi-1.md",
+    "installation/index.md",
     "api/README.md",
     "api/C++_API_Reference.md",
     "api/Python_API_Reference.md",
@@ -41,7 +42,7 @@ def localized_output(source: str, locale: str) -> str:
     if path.name.lower() == "readme.md":
         output = path.parent / "index.html"
     elif path.name == "index.md":
-        output = Path("index.html")
+        output = path.parent / "index.html"
     else:
         output = path.with_suffix("") / "index.html"
     return str(Path("en") / output) if locale == "en" else str(output)
@@ -259,7 +260,7 @@ def main() -> int:
         "product/overview.zh.md": "Exoskeleton Unit（封装）",
         "product/exo-belt.zh.md": "本页为框架页",
         "product/b-core-pi-1.zh.md": "BodyOS SDK / 公开 API",
-        "api/README.zh.md": "BodyOS SDK v2.0.0",
+        "api/README.zh.md": "BodyOS SDK 开发者手册",
         "api/C++_API_Reference.zh.md": "BodyClient",
         "api/Python_API_Reference.zh.md": "BodyClient",
         "api/integration-libraries.zh.md": "未列入正式支持清单",
@@ -267,7 +268,9 @@ def main() -> int:
         "product/overview.en.md": "encapsulated",
         "product/exo-belt.en.md": "framework page",
         "product/b-core-pi-1.en.md": "BodyOS SDK / Public API",
-        "api/README.en.md": "BodyOS SDK v2.0.0",
+        "installation/index.zh.md": "SHA-256",
+        "installation/index.en.md": "SHA-256",
+        "api/README.en.md": "BodyOS SDK Developer Guide",
         "api/C++_API_Reference.en.md": "BodyClient",
         "api/Python_API_Reference.en.md": "BodyClient",
         "api/integration-libraries.en.md": "formal support list",
@@ -283,7 +286,7 @@ def main() -> int:
             print(f"- {item}")
         return 1
 
-    print("Documentation checks passed: 18 bilingual pages, links, anchors, and search scope are valid.")
+    print("Documentation checks passed: 20 bilingual pages, links, anchors, and search scope are valid.")
     return 0
 
 

@@ -25,6 +25,7 @@ SDK 技术内容只来自以下四个开发原稿：
 - `docs/product/overview.zh.md`：四个组成部分、数据与控制路径、封装边界。
 - `docs/product/exo-belt.zh.md`：机械结构、装配与佩戴的可维护框架。
 - `docs/product/b-core-pi-1.zh.md`：硬件架构、供电、连接、板卡接口与开发工作流框架。
+- `docs/installation/index.zh.md`：SDK 下载、校验、解压、安装与版本兼容信息。
 - `docs/api/README.zh.md`：架构、核心特性、部署、快速开始、文档导航与 FAQ。
 - `docs/api/C++_API_Reference.zh.md`：C++ 接口参考。
 - `docs/api/Python_API_Reference.zh.md`：Python 接口参考。
@@ -60,7 +61,7 @@ python scripts/check_docs.py
 
 提交前至少确认：
 
-- 18 个中英文正式页面都能打开；
+- 20 个中英文正式页面都能打开；
 - 导航顺序正确；
 - 页面内链接与锚点有效；
 - 搜索只返回当前正式内容；
@@ -76,3 +77,17 @@ python scripts/check_docs.py
 - `docs/product/overview.en.md`
 
 英文版本已启用构建，发布路径为 `/en/`。中文原稿是 SDK 技术事实来源；英文稿应忠实翻译，不得新增中文原稿中没有的接口、参数、频率、安全保证或兼容性承诺。
+
+## 7. SDK 安装包发布
+
+SDK 软件包推荐作为 GitHub Release 附件发布，不直接提交到 `docs/`：
+
+1. 在 GitHub 仓库的 **Releases** 页面选择 **Draft a new release**。
+2. 创建与 SDK 一致的版本标签，例如 `v2.0.0`。
+3. 上传 `.gz` 或 `.tar.gz` 文件，并在发布说明中写明平台、架构和依赖。
+4. 在本地执行 `shasum -a 256 <文件名>`，保存 SHA-256。
+5. 发布 Release 后，复制附件的固定下载链接。
+6. 同步更新 `docs/installation/index.zh.md` 与 `docs/installation/index.en.md` 中的版本表、下载链接、大小、SHA-256 和准确安装命令。
+7. 严格构建并检查后再推送文档修改。
+
+推荐文件名包含版本、平台和架构，例如 `bodyos-sdk-2.0.0-linux-aarch64.tar.gz`。新版本使用新文件名和新标签，不覆盖旧附件。若压缩包解压后得到 Python `.whl`，应在安装页明确写出实际 wheel 文件名和支持的 Python 版本。

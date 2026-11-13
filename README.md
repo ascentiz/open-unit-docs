@@ -1,6 +1,6 @@
 # BodyOS 开发者文档
 
-本仓库使用 MkDocs Material 构建 BodyOS 中英双语开发者文档，并由 GitHub Pages 发布。网站同时覆盖产品组成、Exo Belt、B-core Pi 1，以及 BodyOS SDK v2.0.0。
+本仓库使用 MkDocs Material 构建 BodyOS 中英双语开发者文档，并由 GitHub Pages 发布。网站同时覆盖产品组成、Exo Belt、B-core Pi 1，以及 BodyOS SDK。
 
 ## 内容基线
 
@@ -28,13 +28,14 @@ Exo Belt 与 B-core Pi 1 页面只发布已确认的系统定位；未知尺寸�
    - 系统组成与开发边界
    - 机械结构：Exo Belt
    - 硬件：B-core Pi 1
-3. BodyOS SDK
+3. Installation
+4. BodyOS SDK
    - SDK 开发者手册
    - API Reference
      - C++ API
      - Python API
    - Integration Libraries（规划中）
-4. 官方示例
+5. 官方示例
 
 所有正式页面都同时使用 `.zh.md` 与 `.en.md` 后缀。构建系统采用语言后缀结构，中文为默认语言，英文发布在 `/en/`，页面间通过“中 / EN”切换。
 
@@ -56,7 +57,7 @@ mkdocs build --strict
 python scripts/check_docs.py
 ```
 
-`check_docs.py` 会检查 18 个中英文正式页面、站内链接、锚点、搜索索引以及旧目录是否被排除。
+`check_docs.py` 会检查 20 个中英文正式页面、站内链接、锚点、搜索索引以及旧目录是否被排除。
 
 ## 发布
 

@@ -19,6 +19,10 @@
 
 查看 B-core Pi 1 的系统角色、开发工作流，以及硬件架构、供电、连接和板卡接口文档框架。
 
+### [Installation](installation/index.md)
+
+下载 BodyOS SDK 正式软件包，查看版本、适用平台、文件大小、SHA-256 校验值和安装说明。
+
 ### BodyOS SDK
 
 - [SDK 开发者手册](api/README.md)：了解 `bodyos-daemon + 客户端双 Socket` 架构、核心特性、部署、快速接入与常见问题。
@@ -40,10 +44,11 @@
 
 1. 先阅读 [系统组成与开发边界](product/overview.md)，明确可访问范围。
 2. 根据需要查看 [Exo Belt](product/exo-belt.md) 与 [B-core Pi 1](product/b-core-pi-1.md) 框架页。
-3. 阅读 [SDK 开发者手册](api/README.md)，理解运行架构并完成部署。
-4. 在 **API Reference** 中根据项目语言选择 [C++ API](api/C++_API_Reference.md) 或 [Python API](api/Python_API_Reference.md)。
-5. 需要接入第三方传感器或设备时，查看 [Integration Libraries](api/integration-libraries.md) 的交付状态。
-6. 最后参考 [官方示例](api/Examples_Guide.md) 完成首个可运行程序。
+3. 前往 [Installation](installation/index.md) 下载并校验与平台匹配的 SDK 软件包。
+4. 阅读 [SDK 开发者手册](api/README.md)，理解运行架构并完成部署。
+5. 在 **API Reference** 中根据项目语言选择 [C++ API](api/C++_API_Reference.md) 或 [Python API](api/Python_API_Reference.md)。
+6. 需要接入第三方传感器或设备时，查看 [Integration Libraries](api/integration-libraries.md) 的交付状态。
+7. 最后参考 [官方示例](api/Examples_Guide.md) 完成首个可运行程序。
 
 ## 当前文档范围
 

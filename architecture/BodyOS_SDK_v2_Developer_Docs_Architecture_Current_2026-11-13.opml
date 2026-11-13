@@ -7,7 +7,7 @@
     <outline text="BodyOS 开发者文档">
       <outline text="01 首页">
         <outline text="文档定位与范围"/>
-        <outline text="机械、硬件、SDK 与示例入口"/>
+        <outline text="机械、硬件、Installation、SDK 与示例入口"/>
         <outline text="推荐阅读顺序与安全提示"/>
       </outline>
       <outline text="02 产品与硬件">
@@ -31,13 +31,20 @@
           <outline text="软件环境与支持版本（待确认）"/>
         </outline>
       </outline>
-      <outline text="03 BodyOS SDK">
-        <outline text="03.1 SDK 开发者手册">
+      <outline text="03 Installation">
+        <outline text="SDK 版本、平台与架构"/>
+        <outline text=".gz / .tar.gz 软件包下载"/>
+        <outline text="文件大小与 SHA-256 校验"/>
+        <outline text="解压、安装与安装后验证"/>
+        <outline text="GitHub Release 历史版本"/>
+      </outline>
+      <outline text="04 BodyOS SDK">
+        <outline text="04.1 SDK 开发者手册">
           <outline text="核心架构与特性"/>
           <outline text="部署与 C++/Python 快速接入"/>
           <outline text="常见问题"/>
         </outline>
-        <outline text="03.2 API Reference">
+        <outline text="04.2 API Reference">
           <outline text="C++ API">
             <outline text="控制、传感器与配置"/>
             <outline text="BLE、报警、故障与录制"/>
@@ -48,13 +55,13 @@
             <outline text=".whl 分发信息待补充"/>
           </outline>
         </outline>
-        <outline text="03.3 Integration Libraries（规划中）">
+        <outline text="04.3 Integration Libraries（规划中）">
           <outline text="第三方传感器"/>
           <outline text="外部设备"/>
           <outline text="正式交付后补充支持矩阵与 API"/>
         </outline>
       </outline>
-      <outline text="04 官方示例">
+      <outline text="05 官方示例">
         <outline text="sensor_read_record"/>
         <outline text="body_assist_control"/>
         <outline text="body_expert_control"/>

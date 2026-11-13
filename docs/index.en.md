@@ -19,6 +19,10 @@ Review the documentation framework for the mechanical structure, assembly, and f
 
 Review the system role and development workflow of B-core Pi 1, together with the documentation framework for its hardware architecture, power supply, connections, and board interfaces.
 
+### [Installation](installation/index.md)
+
+Download an official BodyOS SDK package and review its version, supported platform, file size, SHA-256 checksum, and installation instructions.
+
 ### BodyOS SDK
 
 - [SDK Developer Guide](api/README.md): Learn the `bodyos-daemon + dual client socket` architecture, core capabilities, deployment, quick integration, and troubleshooting guidance.
@@ -40,10 +44,11 @@ Explore four official examples, each available in C++ and Python:
 
 1. Read [System Components and Development Boundaries](product/overview.md) to understand the accessible scope.
 2. Review the [Exo Belt](product/exo-belt.md) and [B-core Pi 1](product/b-core-pi-1.md) framework pages as needed.
-3. Read the [SDK Developer Guide](api/README.md) to understand the runtime architecture and complete deployment.
-4. Under **API Reference**, choose the [C++ API](api/C++_API_Reference.md) or [Python API](api/Python_API_Reference.md) for your project language.
-5. When integrating third-party sensors or devices, check the delivery status under [Integration Libraries](api/integration-libraries.md).
-6. Finish with the [Official Examples](api/Examples_Guide.md) to build your first working program.
+3. Go to [Installation](installation/index.md) to download and verify the SDK package for your platform.
+4. Read the [SDK Developer Guide](api/README.md) to understand the runtime architecture and complete deployment.
+5. Under **API Reference**, choose the [C++ API](api/C++_API_Reference.md) or [Python API](api/Python_API_Reference.md) for your project language.
+6. When integrating third-party sensors or devices, check the delivery status under [Integration Libraries](api/integration-libraries.md).
+7. Finish with the [Official Examples](api/Examples_Guide.md) to build your first working program.
 
 ## Current Documentation Scope
 

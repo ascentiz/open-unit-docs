@@ -7,7 +7,7 @@
 
 - 文档定位与范围
 - 系统组成与开发边界入口
-- 机械、硬件、SDK 与示例入口
+- 机械、硬件、Installation、SDK 与示例入口
 - 推荐阅读顺序与控制安全提示
 
 ## 02 产品与硬件
@@ -35,16 +35,24 @@
 - 软件环境与支持版本（待确认）
 - 通过 SDK/API 读取和控制 Exoskeleton Unit
 
-## 03 BodyOS SDK
+## 03 Installation
 
-### 03.1 SDK 开发者手册
+- SDK 版本、平台与架构
+- `.gz` / `.tar.gz` 软件包下载
+- 文件大小与 SHA-256 校验
+- 解压、安装与安装后验证
+- 通过 GitHub Release 管理历史版本
+
+## 04 BodyOS SDK
+
+### 04.1 SDK 开发者手册
 
 - 核心架构与特性
 - 守护进程部署
 - C++ 与 Python 快速接入
 - 常见问题
 
-### 03.2 API Reference
+### 04.2 API Reference
 
 #### C++ API
 
@@ -59,13 +67,13 @@
 - 配置、BLE、报警与异步录制
 - Python `.whl` 分发信息待交付后补充
 
-### 03.3 Integration Libraries（规划中）
+### 04.3 Integration Libraries（规划中）
 
 - 第三方传感器集成库
 - 外部设备集成库
 - 支持型号、安装、连接、API 与示例待正式交付后补充
 
-## 04 官方示例
+## 05 官方示例
 
 - `sensor_read_record`：传感器读取与异步录制
 - `body_assist_control`：BLE 助力模式控制
@@ -76,5 +84,5 @@
 
 - Exoskeleton Unit 内部硬件、驱动、固件与内部通信实现
 - 旧版 Mechanical、Hardware、Integrations、Research、Tutorials 页面
-- 未经开发确认的英文技术翻译
+- 未经中文事实来源支持的技术扩写
 - 由个人资料或旧版 Wiki 推断出的参数与兼容性说明

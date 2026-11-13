@@ -3,7 +3,7 @@
   <node ID="root" TEXT="BodyOS 开发者文档">
     <node ID="home" POSITION="right" TEXT="01 首页">
       <node ID="home-scope" TEXT="文档定位与范围"/>
-      <node ID="home-entry" TEXT="机械、硬件、SDK 与示例入口"/>
+      <node ID="home-entry" TEXT="机械、硬件、Installation、SDK 与示例入口"/>
       <node ID="home-order" TEXT="推荐阅读顺序与安全提示"/>
     </node>
     <node ID="product" POSITION="right" TEXT="02 产品与硬件">
@@ -27,13 +27,20 @@
         <node ID="bcore-software" TEXT="软件环境与支持版本（待确认）"/>
       </node>
     </node>
-    <node ID="sdk" POSITION="left" TEXT="03 BodyOS SDK">
-      <node ID="manual" TEXT="03.1 SDK 开发者手册">
+    <node ID="installation" POSITION="left" TEXT="03 Installation">
+      <node ID="installation-release" TEXT="SDK 版本、平台与架构"/>
+      <node ID="installation-download" TEXT=".gz / .tar.gz 软件包下载"/>
+      <node ID="installation-checksum" TEXT="文件大小与 SHA-256 校验"/>
+      <node ID="installation-verify" TEXT="解压、安装与安装后验证"/>
+      <node ID="installation-history" TEXT="GitHub Release 历史版本"/>
+    </node>
+    <node ID="sdk" POSITION="left" TEXT="04 BodyOS SDK">
+      <node ID="manual" TEXT="04.1 SDK 开发者手册">
         <node ID="manual-architecture" TEXT="核心架构与特性"/>
         <node ID="manual-deploy" TEXT="部署与 C++/Python 快速接入"/>
         <node ID="manual-faq" TEXT="常见问题"/>
       </node>
-      <node ID="api-reference" TEXT="03.2 API Reference">
+      <node ID="api-reference" TEXT="04.2 API Reference">
         <node ID="cpp" TEXT="C++ API">
           <node ID="cpp-control" TEXT="控制、传感器与配置"/>
           <node ID="cpp-monitor" TEXT="BLE、报警、故障与录制"/>
@@ -44,13 +51,13 @@
           <node ID="python-whl" TEXT=".whl 分发信息待补充"/>
         </node>
       </node>
-      <node ID="integration-libraries" TEXT="03.3 Integration Libraries（规划中）">
+      <node ID="integration-libraries" TEXT="04.3 Integration Libraries（规划中）">
         <node ID="integration-sensors" TEXT="第三方传感器"/>
         <node ID="integration-devices" TEXT="外部设备"/>
         <node ID="integration-status" TEXT="正式交付后补充支持矩阵与 API"/>
       </node>
     </node>
-    <node ID="examples" POSITION="left" TEXT="04 官方示例">
+    <node ID="examples" POSITION="left" TEXT="05 官方示例">
       <node ID="example-sensor" TEXT="sensor_read_record"/>
       <node ID="example-assist" TEXT="body_assist_control"/>
       <node ID="example-expert" TEXT="body_expert_control"/>

@@ -114,6 +114,7 @@ nav:
       - 系统组成与开发边界: product/overview.md
       - 机械结构：Exo Belt: product/exo-belt.md
       - 硬件：B-core Pi 1: product/b-core-pi-1.md
+  - Installation: installation/index.md
   - BodyOS SDK:
       - SDK 开发者手册: api/README.md
       - API Reference:
