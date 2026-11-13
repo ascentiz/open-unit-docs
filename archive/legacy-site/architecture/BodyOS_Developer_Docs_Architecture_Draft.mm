@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0.1">
-  <node ID="root" TEXT="BodyOS Developer Documentation / 开发者文档（精简架构草案）">
+  <node ID="root" TEXT="[历史归档] BodyOS Developer Documentation / 开发者文档（精简架构草案）">
     <font NAME="SansSerif" SIZE="20" BOLD="true"/>
     <node ID="getting_started" TEXT="01 Getting Started / 快速入门" POSITION="right" COLOR="#2563eb">
       <font SIZE="16" BOLD="true"/>

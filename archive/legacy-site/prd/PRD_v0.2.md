@@ -1,4 +1,4 @@
-# BodyOS / Open Unit 文档站 PRD
+# [历史归档] BodyOS / Open Unit 文档站 PRD
 
 版本：v0.2 · 中英双语改版  
 日期：2026-09-16  

@@ -1,4 +1,4 @@
-# BodyOS 开发者文档 PRD v0.3
+# [历史归档] BodyOS 开发者文档 PRD v0.3
 
 日期：2026-09-16。本文记录本地实施阶段及后续调整；实际发布状态以 GitHub Actions 的 docs 工作流为准。
 

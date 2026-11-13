@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>BodyOS 开发者文档 / Developer Documentation（当前架构）</title>
+  </head>
+  <body>
+    <outline text="BodyOS 开发者文档 / Developer Documentation（当前架构）">
+      <outline text="01 快速入门 / Getting Started">
+        <outline text="平台介绍 / Platform Overview"/>
+        <outline text="环境准备与首次运行 / Setup and First Run"/>
+      </outline>
+      <outline text="02 外骨骼腰带机械结构 / Exo Belt Mechanical">
+        <outline text="结构概览 / Structure Overview"/>
+        <outline text="装配与佩戴 / Assembly and Fit"/>
+      </outline>
+      <outline text="03 硬件：B-core Pi 1 / Hardware: B-core Pi 1">
+        <outline text="硬件架构 / Hardware Architecture"/>
+        <outline text="供电与连接 / Power and Connection"/>
+        <outline text="板卡与接口 / Board and Interfaces"/>
+      </outline>
+      <outline text="04 BodyOS SDK">
+        <outline text="安装与配置 / Installation and Configuration"/>
+        <outline text="基本使用 / Basic Usage"/>
+        <outline text="架构与安全边界 / Architecture and Safety Boundary"/>
+      </outline>
+      <outline text="05 API 接口 / API">
+        <outline text="控制 API / Control API"/>
+        <outline text="遥测 API / Telemetry API"/>
+      </outline>
+      <outline text="06 示例 / Examples">
+        <outline text="读取外骨骼本体 / Read Exoskeleton Data"/>
+      </outline>
+      <outline text="07 外部集成 / Integrations">
+        <outline text="ROS 2 集成 / ROS 2"/>
+        <outline text="外部设备与工具 / External Devices and Tools"/>
+      </outline>
+      <outline text="08 故障排查 / Troubleshooting">
+        <outline text="常见问题 / Common Issues"/>
+        <outline text="日志与反馈 / Logs and Feedback"/>
+      </outline>
+    </outline>
+  </body>
+</opml>

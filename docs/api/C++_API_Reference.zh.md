@@ -1,6 +1,6 @@
 # C++ API Reference (`client.hpp`)
 
-返回主目录：[README](./README.md)
+[← 返回 BodyOS SDK 开发者手册](./README.md)
 
 本模块提供与 `bodyos-daemon` 通信的 C++ 客户端接口。适用于需要极高性能的实时控制场景。
 

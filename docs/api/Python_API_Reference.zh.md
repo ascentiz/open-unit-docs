@@ -1,6 +1,6 @@
 # Python API Reference (`client.py`)
 
-返回主目录：[README](./README.md)
+[← 返回 BodyOS SDK 开发者手册](./README.md)
 
 本模块提供一个零第三方依赖的纯 Socket 通信客户端，并在内部使用了 `ctypes` 完美对齐 C++ 的底层内存结构，实现了极高性能的数据解析。此外，Python 端还提供了更符合脚本习惯的高级增量接口与自动重连机制。
 

@@ -1,4 +1,4 @@
-# BodyOS Developer Documentation / 开发者文档（精简架构草案）
+# [历史归档] BodyOS Developer Documentation / 开发者文档（精简架构草案）
 ## BodyOS Developer Documentation / 开发者文档（精简架构草案）
 ### 01 Getting Started / 快速入门
 - Platform Overview / 平台介绍

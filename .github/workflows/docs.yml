@@ -38,8 +38,8 @@ jobs:
       - name: Build documentation
         run: mkdocs build --strict
 
-      - name: Check bilingual documentation
-        run: python scripts/check_i18n.py
+      - name: Check documentation structure and links
+        run: python scripts/check_docs.py
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3

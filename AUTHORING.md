@@ -1,61 +1,78 @@
-# 开发者文档维护指南
+# BodyOS 文档维护说明
 
-框架已搭好。日常写文档不需要重新设计网站，也不需要修改 SDK 软件。
+## 1. 事实来源
 
-## 修改已有页面
+SDK 技术内容只来自以下四个开发原稿：
 
-1. 在 docs/ 找到对应文件：page.md 是英文，page.zh.md 是中文。
-2. 同步编辑两种语言的正文、图片说明和安全提示。代码块保持一致，注明测试版本。
-3. 本地预览，运行严格构建和双语检查。
-4. 提交需要的源文件并推送到 main；团队协作时先提交 PR，再合并到 main。
-5. 在 GitHub Actions 确认 docs 工作流成功，再检查线上页面。
+- `docs/api/README.zh.md`
+- `docs/api/C++_API_Reference.zh.md`
+- `docs/api/Python_API_Reference.zh.md`
+- `docs/api/Examples_Guide.zh.md`
 
-仅保存或本地 commit 不会更新线上网站。推送／合并后，工作流成功才会发布；GitHub Pages 的 Source 需要设为 GitHub Actions。
+产品组成和用户开发边界维护在以下三个页面：
 
-## 预览与检查
+- `docs/product/overview.zh.md`
+- `docs/product/exo-belt.zh.md`
+- `docs/product/b-core-pi-1.zh.md`
 
-在项目根目录执行；首次安装环境见 README。
+已确认的边界是：系统由 Exo Belt、B-core Pi 1、BodyOS SDK 和封装的 Exoskeleton Unit 组成；用户在 B-core Pi 1 上通过 SDK/API 获取外骨骼单元数据并下发控制；Exoskeleton Unit 的内部硬件和驱动不向用户开放。
 
-```bash
-source .venv/bin/activate
-mkdocs serve --dev-addr 127.0.0.1:8000
-```
+开发团队提供新版本时，优先直接更新对应文件。不要根据宣传材料、个人笔记或旧版 Wiki 自行补写参数、兼容性、硬件规格或安全承诺。
 
-英文：http://127.0.0.1:8000/open-unit-docs/
+## 2. 页面职责
 
-中文：http://127.0.0.1:8000/open-unit-docs/zh/
+- `docs/index.zh.md`：文档地图、阅读顺序、内容范围与必要安全提示。
+- `docs/product/overview.zh.md`：四个组成部分、数据与控制路径、封装边界。
+- `docs/product/exo-belt.zh.md`：机械结构、装配与佩戴的可维护框架。
+- `docs/product/b-core-pi-1.zh.md`：硬件架构、供电、连接、板卡接口与开发工作流框架。
+- `docs/api/README.zh.md`：架构、核心特性、部署、快速开始、文档导航与 FAQ。
+- `docs/api/C++_API_Reference.zh.md`：C++ 接口参考。
+- `docs/api/Python_API_Reference.zh.md`：Python 接口参考。
+- `docs/api/integration-libraries.zh.md`：第三方传感器与外部设备集成库的规划和交付状态。
+- `docs/api/Examples_Guide.zh.md`：四个官方示例的运行方式、逻辑与安全机制。
 
-检查命令在另一个终端执行；先停止预览，避免两个构建进程同时写 site：
+产品框架页不得用猜测填充具体规格。每项未知信息应保留“待确认”状态，直到取得负责团队提供的资料。
+
+## 3. 修改原则
+
+1. 保留开发原稿中的接口名、枚举、参数名、默认值、频率和错误行为。
+2. 修正文案或排版时，不改变技术含义。
+3. 新增技术结论前，先取得开发团队确认并记录来源。
+4. 新增页面后，同时更新 `mkdocs.yml`、本文件、`README.md` 和 `scripts/check_docs.py`。
+5. 控制类内容必须保留或补充与原稿一致的安全限制，尤其是电机直控示例。
+6. Exoskeleton Unit 的内部硬件、驱动、固件和内部通信实现不应写成用户可访问接口。
+7. Python `.whl` 的文件名、版本、依赖和安装命令在交付前保持待确认，不自行编造。
+8. Integration Libraries 页面只记录正式交付或明确处于规划中的能力，不将预期设备写成已支持设备。
+
+## 4. 旧内容处理
+
+旧页面已移入 `archive/legacy-site/docs/` 作为历史资料保留，不参与网站构建。新的机械与硬件内容只维护在 `docs/product/`；不要把旧 `mechanical/` 或 `hardware/` 目录重新加入导航。
+
+旧版信息架构保存在 `archive/legacy-site/architecture/`，不代表当前产品结构。
+
+## 5. 本地验收
 
 ```bash
 source .venv/bin/activate
 mkdocs build --strict
-python scripts/check_i18n.py
+python scripts/check_docs.py
 ```
 
-检查涵盖中英页面成对、代码块一致、语言标记、对应语言切换、编辑链接、内部资源及锚点、搜索索引；不自动判断翻译质量或硬件／SDK 真实性。
+提交前至少确认：
 
-## 新增页面
+- 18 个中英文正式页面都能打开；
+- 导航顺序正确；
+- 页面内链接与锚点有效；
+- 搜索只返回当前正式内容；
+- 中文页面语言为 `zh`，英文页面语言为 `en`；
+- “中 / EN”语言切换能进入对应页面；
+- 旧版栏目没有出现在构建结果中。
 
-- 创建同名中英文文件，例如 docs/sdk/new-topic.md 和 docs/sdk/new-topic.zh.md。
-- 在 mkdocs.yml 的 nav 登记英文名称和不带语言后缀的源文件路径。
-- 在中文语言配置的 nav_translations 登记中文名称。
-- 两种语言都用普通相对链接，例如 ../api/control-api.md，不要手动加 /zh/。
-- 图片放入 docs/assets/，通过相对路径引用，共享资源无需复制。
-- 刻意不进入主导航的辅助页登记到 not_in_nav，并从相关页面提供入口。
+## 6. 英文版本
 
-新增一级栏目同样只需改配置；配色、布局、自定义交互或构建工具变更才涉及网站开发。
+中文页面统一使用 `.zh.md`，英文页面使用相同基础文件名的 `.en.md`。例如：
 
-## 当前栏目与内容状态
+- `docs/product/overview.zh.md`
+- `docs/product/overview.en.md`
 
-Getting Started → Exo Belt Mechanical → Hardware: B-core Pi 1 → BodyOS SDK → API → Examples → Integrations → Troubleshooting。
-
-BodyOS 是通过 .whl 分发的 Python SDK，不是完整操作系统。实际软件包名称、兼容版本、调用方式、硬件参数及 ROS 2 支持情况，以正式资料为准。“待补充”页面是编写骨架，不是功能承诺。现有 API 仍为预览；当前示例依据展会操作说明整理，需与实际 demo 和设备版本核对。
-
-原 architecture、tutorials、research、community 和早期入门页保留原 URL，可从首页补充资料及相关页面访问。
-
-## 提交与安全
-
-只提交本次需要的源文件；无需提交自动生成的 site/、.venv/ 或浏览器检查产物。不要提交账号凭据、令牌和未经授权的实验数据。
-
-涉及接线、供电、佩戴及动作控制时，仅使用经过批准和验证的步骤。替换预览 API／示例前，与真实 wheel 和硬件版本核对。
+英文版本已启用构建，发布路径为 `/en/`。中文原稿是 SDK 技术事实来源；英文稿应忠实翻译，不得新增中文原稿中没有的接口、参数、频率、安全保证或兼容性承诺。

@@ -1,6 +1,6 @@
 # 官方示例代码详解 (Examples)
 
-返回主目录：[README](./README.md)
+[← 返回 BodyOS SDK 开发者手册](./README.md)
 
 本指南详细讲解 `bin/`（C++）和 `python/` 目录下的 4 个官方 Demo，帮助您快速理解 BodyOS SDK 的最佳实践与安全机制。
 
